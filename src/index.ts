@@ -10,7 +10,9 @@ async function init() {
   app.use(cors());
   app.use(bodyParser.json());
   app.use("/api", router);
-
+  app.get("/test-api", (req, res) => {
+    res.send("Pruebas de integracion Continua");
+  });
   app.listen(PORT, () => {
     console.log("Server on port", PORT);
   });
