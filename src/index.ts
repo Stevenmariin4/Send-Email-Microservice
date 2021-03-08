@@ -11,7 +11,7 @@ async function init() {
   app.use(bodyParser.json());
   app.use("/api", router);
   app.get("/test-api", (req, res) => {
-    res.send("TEST TEST TEST TEST");
+    res.send("Hola Cristian");
   });
   app.listen(PORT, () => {
     console.log("Server on port", PORT);
